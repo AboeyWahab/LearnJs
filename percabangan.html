@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Percabangan Js By PetaniKode</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// Percabangan If
+		/*let totalBelanja = prompt("Total Belanja", 0);
+
+		if (totalBelanja > 100000){
+			document.write("<h2>Selamat Anda Mendapatkan Vaucer Belanja</h2>");
+		}
+
+		document.write("<p>Terimakasih telah berbelanja ditoko kami.</p>");*/
+
+		// Percabangan If/Else
+		/*let password = prompt("Masukan Password Anda...");
+
+		if(password =='kopi'){
+			document.write("<p>Halo Selamat Datang</p>");
+		}else{
+			document.write("<p>Password Anda Salah</p>");
+		}
+		document.write("<p>Terima kasih sudah menggunakan aplikasi ini!</p>");*/
+
+		//Percabangan If/Else/If
+		let nilai = prompt("Masukan Nilai Anda...");
+		let gradeNilai = "";
+
+		if(nilai >= 90) {
+			gradeNilai = "A";
+		}else if (nilai >=70) {
+			gradeNilai = "B";
+		}else if (nilai >=55) {
+			gradeNilai = "C";
+		}else if (nilai >=40) {
+			gradeNilai = "D";
+		}else {
+			nilai = "E";
+		}
+
+		document.write(`<p>Nilai Anda Adalah ${gradeNilai}</p>`);
+
+		
+	</script>
+</body>
+</html>

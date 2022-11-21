@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Penulisan JS By PetaniKode</title>
+</head>
+<body>
+	<h1>Tutorial Javascript untuk Pemula</h1>
+    <div id="hasil-output"></div>
+	<script type="text/javascript">
+		/*
+		penulisan js terditi dari 4 macam
+		1.console.log(value)
+		2.window.alert("value")
+		3.document.write("value")
+		4.innerHtml=("value")
+		*/
+
+		//Contoh Alert
+		alert("Selamat datang di tutorial belajar Javascript");
+
+        function sayHello(){
+            alert("Hello!");
+        }
+
+        document.write("<h1>Hello World!</h1>");
+        document.write("<hr>");
+        document.write("<p>Saya sedang belajar Javascript</p>");
+        document.write("<p>Dari dasar</p>");
+
+        // membuat objek elemen
+        let hasil = document.getElementById("hasil-output");
+
+        // menampilkan output ke elemen hasil
+        hasil.innerHTML = "<p>Aku suka Javascript</p>";
+		
+
+	</script>
+</body>
+</html>
