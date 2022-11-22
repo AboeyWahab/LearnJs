@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Perulangan Js By PetaniKode</title>
+</head>
+<body>
+<script type="text/javascript">
+	//Looping pada javascript terbagi menjadi 2 counted loop dan uncounted loop
+
+	/*
+	counted loop 
+	for
+	foreach
+	repeat
+	==============
+	uncounted loop
+	while
+	do/while
+	*/
+
+	//Perulangan for 
+	/*for(let i = 0; i < 10; i++){
+    document.write("<p>Perulangan ke-" + i + "</p>")
+	}*/
+
+	//Perulangan while
+	let ulangi = confirm("Apakah anda mau mengulang?");
+	let counter = 0;
+
+	while(ulangi){
+	    counter++;
+	    ulangi = confirm("Apakah anda mau mengulang?");
+	}
+
+	document.write("Perulangan sudah dilakukan sebanyak "+ counter +" kali");
+</script>	
+</body>
+</html>

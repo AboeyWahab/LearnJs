@@ -27,24 +27,85 @@
 		document.write("<p>Terima kasih sudah menggunakan aplikasi ini!</p>");*/
 
 		//Percabangan If/Else/If
-		let nilai = prompt("Masukan Nilai Anda...");
+		/*let nilai = prompt("Masukan Nilai Anda...");
 		let gradeNilai = "";
 
 		if(nilai >= 90) {
 			gradeNilai = "A";
-		}else if (nilai >=70) {
+		}else if (nilai >=80) {
 			gradeNilai = "B";
-		}else if (nilai >=55) {
+		}else if (nilai >=70) {
 			gradeNilai = "C";
-		}else if (nilai >=40) {
+		}else if (nilai >=60) {
 			gradeNilai = "D";
 		}else {
-			nilai = "E";
+			gradeNilai = "E";
 		}
 
-		document.write(`<p>Nilai Anda Adalah ${gradeNilai}</p>`);
+		document.write(`<p>Nilai Anda Adalah ${gradeNilai}</p>`);*/
 
+		//Percabangan Switch/Case
+		/*let jawab = prompt("Pilih Angka 1-10 Untuk Mendapatkan Hadiah...");
+		let hadiah = "";
 		
+		switch(jawab){
+		case "1": 
+				hadiah = "Tisu";
+			break;
+		case "4":
+				hadiah = "Teh Botol";
+			break;
+		case "6":
+				hadiah = "Uang Rp5000";
+			break;
+		case "8":
+				hadiah = "Buku Tulis";
+			break;	
+		case "9":
+				hadiah = "Uang Rp10000";
+			break;
+		default:
+			document.write("<p>Oooppss Angka Yang Anda Masukan Salah... </p>")
+		}
+
+		if (hadiah === "") {
+			document.write("<p>Kamu gagal mendapat hadiah</p>");
+        } else {
+            document.write("<h2>Selamat kamu mendapatkan " + hadiah + "</h2>");
+        
+		}*/
+
+		//Percabangan Ternary
+		/*let ask = prompt("Apakah Surabaya Ibu Kota Jawa Barat");
+		let answer = (ask.toUpperCase()=="TIDAK") ? "Benar" : "Salah";
+
+		document.write(`<p>Jawaban Anda : ${answer}</p>`);*/
+
+		//Percabangan Bersarang
+
+		/*let userName = prompt("Username");
+		let passWord = prompt("Password");
+
+		if(userName == "aboeywahab") {
+			if(passWord == "kopi123"){
+				document.write("<h2>Selamat Datang </h2>");
+			} else{
+				document.write("<h2>Password Yang Anda Masukan Salah</h2>");
+			}
+		}else {
+			document.write("<h2>Anda Tidak Terdaftar</h2>");
+		}*/
+
+		//Cara diatas dapat disederhanakan menggunakan cara ini.
+		var username = prompt("Username:");
+		var password = prompt("Password:");
+
+		if(username == "petanikode" && password == "kopi"){
+		    document.write("<h2>Selamat datang pak bos!</h2>");
+		} else {
+		    document.write("<p>Password salah, coba lagi!</p>");
+		}
+
 	</script>
-</body>
+	
 </html>
