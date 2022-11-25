@@ -26,15 +26,60 @@
 	}*/
 
 	//Perulangan while
-	let ulangi = confirm("Apakah anda mau mengulang?");
+	/*let ulangi = confirm("Apakah anda mau mengulang?");
 	let counter = 0;
 
 	while(ulangi){
 	    counter++;
-	    ulangi = confirm("Apakah anda mau mengulang?");
+	    ulangi = confirm("Apakah anda mau mengulang kembali?");
 	}
 
-	document.write("Perulangan sudah dilakukan sebanyak "+ counter +" kali");
+	document.write("Perulangan sudah dilakukan sebanyak "+ counter +" kali");*/
+
+	//Perulangan do/while
+	/*let ulangi = confirm("Apakah anda mau mengulang?");
+	let counter = 0;
+
+	do {
+		counter++;
+		ulangi = confirm("Apakah anda mau mengulang kembali?")
+	}while(ulangi);
+
+	document.write("Perulangan sudah dilakukan sebanyak "+ counter+" kali");*/
+
+	//Perulangan foreach menggunakan for dan in
+	//let products = ["Helmet", "Body Harnest", "Fireman", "Gloves"];
+
+	/*for(i = 0; i < products.length; i++){
+    document.write(i+". "+ products[i] + "<br/>");
+	}*/
+
+	//penulisan dapat dipersingkat menggunakan cara ini
+	/*for(i in products){
+    document.write(i+". "+ products[i] +"<br/>");
+	}*/
+
+	//Perulangan foreach menggunakan foreach
+	//let hari = ["Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Ahad"];
+
+	/*hari.forEach(function(days){
+    document.write("<h3>" + days + "</h3>");
+	});*/
+
+	//penulisan looping foreach dapat dipersingkat menggunakan arrow function
+	/*hari.forEach((days) =>{
+	document.write("<h3>" + days + "</h3>");
+	});*/
+
+	//Looping dengan menggunakan fungsi repeat
+	//ocument.write("Ulangi kalimat ini!<br>".repeat(100));
+
+	//Perulangan Bersarang/Nested
+	for(let i = 0; i < 10; i++){
+    	for(let j = 0; j < 10; j++){
+        document.write("<p>Perulangan ke " + i + " Dan " + j + "</p>");
+    }
+}
 </script>	
 </body>
 </html>

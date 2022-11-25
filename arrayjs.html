@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Array Js By PetaniKode</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let productsPakaian = ["Baju", "Kaos", "Celana", "Celana Chino", "Flannel"]
+
+		// mengambil data array dengan sederhana
+        //document.write(productsPakaian[2]);
+
+		// menambahkan data array
+        productsPakaian.push("Celana Jeans", "Jersey");
+
+        // menghapus data array
+        delete productsPakaian[0];
+
+        // mengembalikan data item atau data yang terhapus dari array
+        productsPakaian.pop();
+
+        // menghapus data dari depan 
+        productsPakaian.shift();
+
+        // menghapus array dengan index dan jumlah tertentu
+        //array.splice(<indeks>, <total>);
+        productsPakaian.splice (1, 1)
+
+        // merubah isi array
+        productsPakaian[0] = ("Jersey Pildun 2022")
+		
+        document.write("<h3>Daftar Produk :</h3>");
+        document.write("<ol>");
+        // memanggil array dengan looping
+		for(let counter = 0; counter < productsPakaian.length; counter++){
+            document.write(`<li>${ productsPakaian[counter] }</li>`);
+        }
+
+        document.write("</ol>");
+	</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Function Js By PetaniKode</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		/*// Menggunakan fungsi dengan cara biasa
+		function greeting() {
+			document.write("1.Hallo Dunia");
+		}
+
+		// Menggunkan fungsi dengan ekpesi
+		let sayHi = function (){
+			document.write("2.Halloo Dunia");
+		}
+
+		// Menggunakan fungsi dengan arrow function =>
+		let salamPembukan = ()=> {
+			document.write("3.Halo Salam Pembuka");
+		}
+
+		// menggunakan fungsi dengan konstruktor
+		let salamPenutup = new Function('document.writeln("4.Sampai Jumpa!");');
+
+		greeting();
+		sayHi();
+		salamPembukan();
+		salamPenutup();*/
+
+		// menggunakan fungsi dengan parameter
+		/*function kali(a, b){
+	    hasilKali = a * b;
+	    console.log("Hasil kali a*b = " + hasilKali);
+		}*/
+
+		// menggunakan fungsi dengan pengembalian nilai
+		function tambah (a, b){
+			hasilTambah = a + b;
+			return hasilTambah;
+		}
+
+		let hasil1 = 30;
+		let hasil2 = 50;
+		let hasilPenambahan = tambah (hasil1, hasil2);
+
+		document.writeln(hasilPenambahan);
+
+
+	</script>
+</body>
+</html>
